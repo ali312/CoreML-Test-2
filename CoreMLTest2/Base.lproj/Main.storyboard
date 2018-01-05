@@ -67,10 +67,16 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Hn-qb-z5q">
                                         <rect key="frame" x="325" y="16" width="34" height="24.5"/>
                                         <state key="normal" title="Start"/>
+                                        <connections>
+                                            <action selector="startButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="cbb-ir-KZi"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="foc-a1-pVG">
                                         <rect key="frame" x="329" y="44.5" width="30" height="24.5"/>
                                         <state key="normal" title="Skip"/>
+                                        <connections>
+                                            <action selector="skipButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="H84-hA-aHQ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -102,6 +108,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="bottomView" destination="hm8-5L-Zbd" id="QcW-BX-F8z"/>
+                        <outlet property="highscoreLabel" destination="dGi-Kc-oUJ" id="H9S-LN-4Ik"/>
+                        <outlet property="objectLabel" destination="llc-7c-fIA" id="ZlW-u9-69W"/>
+                        <outlet property="scoreLabel" destination="27R-WD-Y0E" id="OpZ-Ug-Zh6"/>
+                        <outlet property="skipButton" destination="foc-a1-pVG" id="Zet-LW-RrQ"/>
+                        <outlet property="startButton" destination="4Hn-qb-z5q" id="4wc-xp-3Lx"/>
+                        <outlet property="timeLabel" destination="OA0-IW-Qbb" id="Bch-wg-7I5"/>
+                        <outlet property="topView" destination="RXp-J9-JEO" id="0Qn-7f-NAp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
